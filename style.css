@@ -1996,16 +1996,21 @@ button { border: none; background: none; font: inherit; cursor: pointer; }
     overflow: hidden !important;
   }
   .team-photo-wrap {
-    height: 360px !important;
+    height: auto !important;
     width: 100% !important;
     position: relative !important;
-    background: var(--accent-lt) !important;
+    background: #EBF2FE !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
   }
   .team-photo {
     width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    object-position: center 10% !important;
+    height: auto !important;
+    max-height: 440px !important;
+    object-fit: contain !important;
+    object-position: center top !important;
+    display: block !important;
   }
   .team-info { padding: 22px 18px !important; }
 
