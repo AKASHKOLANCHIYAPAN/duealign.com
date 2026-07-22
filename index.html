@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DueAlign — Web Development, AI Automation & Design Agency</title>
+  <meta name="description" content="DueAlign is a remote agency that builds websites, automates workflows with AI, and creates beautiful designs. We work with businesses of all sizes to get real results — fast." />
+  <meta name="keywords" content="DueAlign, web development agency, AI automation, UI UX design, remote agency India, content creation, graphic design, AI agents" />
+  <meta name="author" content="Akash K, S.Praveen — DueAlign" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:title" content="DueAlign — We Build. We Design. We Automate." />
+  <meta property="og:description" content="A remote agency that builds websites, automates your work with AI, and creates content that gets noticed. Simple process, real results." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="logo.jpeg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="DueAlign — We Build. We Design. We Automate." />
+
+  <link rel="canonical" href="https://duealign.com" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Scroll Progress -->
+  <div class="scroll-bar" id="scrollBar"></div>
+
+  <!-- ═══════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-inner" aria-label="Main navigation">
+
+      <!-- Logo -->
+      <a href="#home" class="nav-logo" aria-label="DueAlign Home">
+        <img src="logo.jpeg" alt="DueAlign" class="logo-img" />
+        <div class="logo-texts">
+          <span class="logo-name">DueAlign<sup>®</sup></span>
+          <span class="logo-status">
+            <span class="status-dot"></span>
+            Available for Projects
+          </span>
+        </div>
+      </a>
+
+      <!-- Nav Links -->
+      <ul class="nav-links" role="list">
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#how-we-work" class="nav-link">How We Work</a></li>
+        <li><a href="#our-work" class="nav-link">Our Work</a></li>
+        <li><a href="#team" class="nav-link">Team</a></li>
+        <li><a href="#join-team" class="nav-link">Careers</a></li>
+      </ul>
+
+      <!-- CTA -->
+      <a href="#contact" class="nav-cta" id="navCta">
+        Let's Talk →
+      </a>
+
+      <!-- Hamburger -->
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <a href="#services" class="mob-link">Services</a>
+      <a href="#how-we-work" class="mob-link">How We Work</a>
+      <a href="#our-work" class="mob-link">Our Work</a>
+      <a href="#team" class="mob-link">Team</a>
+      <a href="#join-team" class="mob-link">Careers / Join Us</a>
+      <a href="#contact" class="mob-link mob-cta">Let's Talk →</a>
+    </div>
+  </header>
+
+  <main id="home">
+
+    <!-- ═══════════════════════════════
+         HERO
+    ═══════════════════════════════ -->
+    <section class="hero" aria-labelledby="heroTitle">
+
+      <!-- Logo centered above headline -->
+      <div class="hero-logo-center" data-reveal>
+        <img src="logo.jpeg" alt="DueAlign" class="hero-logo-img" />
+      </div>
+
+      <div class="hero-text" data-reveal>
+        <span class="eyebrow">Remote Agency · Est. 2026</span>
+        <h1 class="hero-title" id="heroTitle">
+          We Build Websites,<br/>
+          <span class="text-accent">Automate Your Work</span><br/>
+          &amp; Design What Sells.
+        </h1>
+        <p class="hero-desc">
+          DueAlign is a small remote team that handles your website, branding, AI automation, and content — so you can focus on running your business. We keep things simple, deliver on time, and actually care about your results.
+        </p>
+
+        <!-- Trust line -->
+        <p class="hero-trust">
+          <strong>Trusted by startups, businesses &amp; individuals</strong> who want real work done without the runaround.
+        </p>
+
+        <!-- CTA Row -->
+        <div class="hero-btns">
+          <a href="#contact" class="btn-fill">Start a Project →</a>
+          <a href="#services" class="btn-outline">See What We Do ↓</a>
+        </div>
+
+        <!-- Quick email -->
+        <a href="mailto:duealigntechsolution@gmail.com" class="hero-email-link" aria-label="Email DueAlign">
+          <img src="svc_content.png" alt="" class="email-icon-img" aria-hidden="true"/>
+          duealigntechsolution@gmail.com
+        </a>
+      </div>
+
+      <!-- Project Cost Estimator -->
+      <div class="estimator-card" data-reveal aria-label="Project cost estimator">
+        <div class="estimator-header">
+          <div>
+            <p class="estimator-label">Get a Quick Estimate</p>
+            <p class="estimator-sublabel">Answer 3 questions — we'll show you what to expect</p>
+          </div>
+          <span class="estimator-badge">Free · No Commitment</span>
+        </div>
+
+        <!-- Step 1 -->
+        <div class="est-step" id="step1">
+          <p class="est-q">What do you need help with?</p>
+          <div class="est-options" id="serviceOptions">
+            <button class="est-opt" data-val="website">Website</button>
+            <button class="est-opt" data-val="app">Mobile App</button>
+            <button class="est-opt" data-val="ai">AI / Automation</button>
+            <button class="est-opt" data-val="design">UI/UX Design</button>
+            <button class="est-opt" data-val="content">Content Creation</button>
+            <button class="est-opt" data-val="graphic">Graphic / Branding</button>
+            <button class="est-opt" data-val="fullpackage">Full Package</button>
+          </div>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="est-step hidden" id="step2">
+          <p class="est-q">How big is your project?</p>
+          <div class="est-options" id="sizeOptions">
+            <button class="est-opt" data-val="small">Small — Just getting started</button>
+            <button class="est-opt" data-val="medium">Medium — Growing business</button>
+            <button class="est-opt" data-val="large">Large — Full-scale build</button>
+          </div>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="est-step hidden" id="step3">
+          <p class="est-q">When do you need it?</p>
+          <div class="est-options" id="urgencyOptions">
+            <button class="est-opt" data-val="asap">As soon as possible</button>
+            <button class="est-opt" data-val="month">Within a month</button>
+            <button class="est-opt" data-val="flexible">I'm flexible</button>
+          </div>
+        </div>
+
+        <!-- Result -->
+        <div class="est-result hidden" id="estResult">
+          <div class="est-result-grid">
+            <div class="est-result-item">
+              <span class="est-result-label">Estimated Timeline</span>
+              <span class="est-result-val" id="resTimeline">—</span>
+            </div>
+            <div class="est-result-item">
+              <span class="est-result-label">Starting From</span>
+              <span class="est-result-val" id="resPrice">—</span>
+            </div>
+            <div class="est-result-item">
+              <span class="est-result-label">What's Included</span>
+              <span class="est-result-val est-result-val--sm" id="resIncludes">—</span>
+            </div>
+          </div>
+          <p class="est-note">This is a rough idea — your actual quote will be custom. <a href="#contact" class="est-link">Talk to us for an exact number.</a></p>
+          <button class="est-restart" id="restartBtn">← Start Over</button>
+        </div>
+
+        <div class="est-progress" id="estProgress">
+          <span class="est-progress-dot active" id="dot1"></span>
+          <span class="est-progress-dot" id="dot2"></span>
+          <span class="est-progress-dot" id="dot3"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════
+         STATS BAR
+    ═══════════════════════════════ -->
+    <section class="stats-bar" aria-label="Key numbers">
+      <div class="stats-inner">
+        <div class="stat-item">
+          <span class="stat-num" data-count="18">0</span><span class="stat-unit">+</span>
+          <span class="stat-lbl">Projects Delivered</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="100" data-suffix="%">0</span>
+          <span class="stat-lbl">On-Time Delivery</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+          <span class="stat-num static">4.9<small>/5</small></span>
+          <span class="stat-lbl">Client Satisfaction</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+          <span class="stat-num static">&lt;2<small>hrs</small></span>
+          <span class="stat-lbl">Response Time</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════
+         TRUST SECTION
+    ═══════════════════════════════ -->
+    <section class="trust-section" aria-labelledby="trustTitle">
+      <div class="container">
+        <div class="trust-inner">
+          <div class="trust-left" data-reveal>
+            <span class="eyebrow">Who We Are</span>
+            <h2 class="section-title" id="trustTitle">
+              A Remote Team That<br/><span class="text-accent">Actually Gets Things Done.</span>
+            </h2>
+            <p class="body-text">
+              We're Akash and Praveen — two people who started DueAlign because we were tired of seeing businesses overpay for slow, overcomplex agencies that don't communicate.
+            </p>
+            <p class="body-text mt-16">
+              We work remotely, respond fast, and treat every project like it's our own. Whether you need a simple website or a full AI-powered workflow, we'll figure it out together and build something you're proud of.
+            </p>
+            <a href="#contact" class="btn-fill mt-32">Work With Us →</a>
+          </div>
+          <div class="trust-right" data-reveal>
+            <div class="trust-cards">
+              <div class="trust-card">
+                <img src="svc_remote.png" alt="Remote team" class="trust-card-img" />
+                <strong>We work 100% remotely</strong>
+                <p>No office visits needed. Everything happens online — fast and smoothly.</p>
+              </div>
+              <div class="trust-card">
+                <img src="svc_web.png" alt="On time delivery" class="trust-card-img" />
+                <strong>We actually meet deadlines</strong>
+                <p>We set realistic timelines and stick to them. No excuses, no ghosting.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════
+         SERVICES
+    ═══════════════════════════════ -->
+    <section class="services-section" id="services" aria-labelledby="servicesTitle">
+      <div class="container">
+        <div class="section-header centered" data-reveal>
+          <span class="eyebrow">What We Do</span>
+          <h2 class="section-title" id="servicesTitle">
+            Here's How We Can<br/><span class="text-accent">Help Your Business.</span>
+          </h2>
+          <p class="section-sub">We cover everything digital — from your first website to AI tools that save you hours every week. Pick what you need, or let us put together the right combination.</p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="svc-card" tabindex="0" data-reveal>
+            <div class="svc-img-wrap">
+              <img src="svc_web.png" alt="Web Development" class="svc-img" loading="lazy" />
+            </div>
+            <div class="svc-body">
+              <span class="svc-num">01</span>
+              <h3 class="svc-title">Website & Web App Development</h3>
+              <p class="svc-desc">Need a website that actually works and looks great? We build everything from simple landing pages to full web applications. Clean code, fast loading, works on all devices.</p>
+              <ul class="svc-tags">
+                <li>Business Websites</li>
+                <li>Landing Pages</li>
+                <li>Web Applications</li>
+                <li>E-Commerce Stores</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="svc-card" tabindex="0" data-reveal>
+            <div class="svc-img-wrap">
+              <img src="svc_ai.png" alt="AI and Automation" class="svc-img" loading="lazy" />
+            </div>
+            <div class="svc-body">
+              <span class="svc-num">02</span>
+              <h3 class="svc-title">AI Tools &amp; Workflow Automation</h3>
+              <p class="svc-desc">Spending hours on repetitive tasks? We build AI agents and automation systems that handle the boring work for you — so you can focus on what actually matters in your business.</p>
+              <ul class="svc-tags">
+                <li>AI Chatbots</li>
+                <li>Task Automation</li>
+                <li>AI Content Tools</li>
+                <li>Custom AI Agents</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="svc-card" tabindex="0" data-reveal>
+            <div class="svc-img-wrap">
+              <img src="svc_uiux.png" alt="UI UX Design" class="svc-img" loading="lazy" />
+            </div>
+            <div class="svc-body">
+              <span class="svc-num">03</span>
+              <h3 class="svc-title">UI/UX Design</h3>
+              <p class="svc-desc">Your product should be easy and enjoyable to use. We design interfaces that feel intuitive, look professional, and guide your users naturally toward what you want them to do.</p>
+              <ul class="svc-tags">
+                <li>App UI Design</li>
+                <li>Website Design</li>
+                <li>Figma Prototypes</li>
+                <li>User Experience</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="svc-card" tabindex="0" data-reveal>
+            <div class="svc-img-wrap">
+              <img src="svc_content.png" alt="Content Creation" class="svc-img" loading="lazy" />
+            </div>
+            <div class="svc-body">
+              <span class="svc-num">04</span>
+              <h3 class="svc-title">Content Creation</h3>
+              <p class="svc-desc">Good content brings people to you. We write website copy, social media posts, and articles that sound like a real human wrote them — because they help your audience understand what you do and why they should choose you.</p>
+              <ul class="svc-tags">
+                <li>Social Media Posts</li>
+                <li>Website Copywriting</li>
+                <li>Blog Articles</li>
+                <li>Video Scripts</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="svc-card" tabindex="0" data-reveal>
+            <div class="svc-img-wrap">
+              <img src="svc_graphic.png" alt="Graphic Design" class="svc-img" loading="lazy" />
+            </div>
+            <div class="svc-body">
+              <span class="svc-num">05</span>
+              <h3 class="svc-title">Graphic Design &amp; Branding</h3>
+              <p class="svc-desc">First impressions matter. We create logos, brand kits, social media graphics, and marketing materials that make your business look credible and professional — even if you're just starting out.</p>
+              <ul class="svc-tags">
+                <li>Logo Design</li>
+                <li>Brand Identity</li>
+                <li>Social Graphics</li>
+                <li>Marketing Materials</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="svc-card" tabindex="0" data-reveal>
+            <div class="svc-img-wrap">
+              <img src="svc_remote.png" alt="Dedicated Remote Team" class="svc-img" loading="lazy" />
+            </div>
+            <div class="svc-body">
+              <span class="svc-num">06</span>
+              <h3 class="svc-title">Dedicated Remote Team</h3>
+              <p class="svc-desc">Need ongoing help? We work as an extension of your team — available when you need us, reporting regularly, and always keeping you in the loop. Think of us as your remote tech department.</p>
+              <ul class="svc-tags">
+                <li>Monthly Retainer</li>
+                <li>Ongoing Support</li>
+                <li>Regular Updates</li>
+                <li>Full Ownership</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="svc-card" tabindex="0" data-reveal>
+            <div class="svc-img-wrap">
+              <img src="svc_ai.png" alt="Mobile App Development" class="svc-img" loading="lazy" />
+            </div>
+            <div class="svc-body">
+              <span class="svc-num">07</span>
+              <h3 class="svc-title">Mobile App Development</h3>
+              <p class="svc-desc">Have an idea for an app? We build clean, fast mobile apps for Android and iOS — from simple utility apps to full-featured platforms. We handle the design, development, and launch, so you just focus on your idea.</p>
+              <ul class="svc-tags">
+                <li>Android Apps</li>
+                <li>iOS Apps</li>
+                <li>React Native</li>
+                <li>App UI Design</li>
+              </ul>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════
+         HOW WE WORK
+    ═══════════════════════════════ -->
+    <section class="process-section" id="how-we-work" aria-labelledby="processTitle">
+      <div class="container">
+        <div class="section-header centered" data-reveal>
+          <span class="eyebrow">How We Work</span>
+          <h2 class="section-title" id="processTitle">
+            No Confusion. No Delays.<br/><span class="text-accent">Just Clear Steps.</span>
+          </h2>
+          <p class="section-sub">Our process is designed to be as simple as possible for you. We handle the complexity — you just need to tell us what you want.</p>
+        </div>
+
+        <div class="steps-grid">
+          <div class="step-card" data-reveal>
+            <span class="step-num">01</span>
+            <h3>Tell Us What You Need</h3>
+            <p>Fill in our quick form or send us an email. Tell us what you're working on, what you need, and roughly when you need it by. No technical jargon required.</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step-card" data-reveal>
+            <span class="step-num">02</span>
+            <h3>We Send You a Clear Plan</h3>
+            <p>Within 24 hours, we'll send you a straightforward breakdown of what we'll do, how long it'll take, and what it costs. No hidden fees, no confusing fine print.</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step-card" data-reveal>
+            <span class="step-num">03</span>
+            <h3>We Build &amp; Keep You Updated</h3>
+            <p>Once you approve, we get to work. You'll get regular updates so you always know where things stand. You can give feedback any time — we want you to love the result.</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step-card" data-reveal>
+            <span class="step-num">04</span>
+            <h3>Delivered. Done Right.</h3>
+            <p>We hand over your finished project on time. Every engagement includes follow-up support, so if something needs tweaking after delivery, we're still here.</p>
+          </div>
+        </div>
+
+        <div class="process-cta-box" data-reveal>
+          <p class="process-hook">"The longer you wait, the more your competitors gain ground. Let's start today."</p>
+          <a href="#contact" class="btn-fill">Book a Free 20-Min Call →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════
+         ENGAGEMENT MODELS
+    ═══════════════════════════════ -->
+    <section class="plans-section" id="plans" aria-labelledby="plansTitle">
+      <div class="container">
+        <div class="section-header centered" data-reveal>
+          <span class="eyebrow">Pricing Options</span>
+          <h2 class="section-title" id="plansTitle">
+            Pick the Option That<br/><span class="text-accent">Fits Where You Are.</span>
+          </h2>
+        </div>
+
+        <div class="toggle-wrap">
+          <button class="tog-btn tog-active" id="togOne">One-Time Project</button>
+          <button class="tog-btn" id="togMonthly">Ongoing Monthly</button>
+        </div>
+
+        <div class="plans-grid">
+          <div class="plan-card" data-reveal>
+            <span class="plan-tag">STARTER</span>
+            <h3 class="plan-name">Quick Sprint</h3>
+            <p class="plan-desc">Perfect for a specific deliverable — a landing page, a logo, a social media kit, or a small automation. Get it done in days, not months.</p>
+            <ul class="plan-feats">
+              <li>✓ Delivered in 3–7 days</li>
+              <li>✓ One focused deliverable</li>
+              <li>✓ 2 rounds of revisions</li>
+              <li>✓ All source files included</li>
+            </ul>
+            <a href="#contact" class="plan-btn">Get Started →</a>
+          </div>
+
+          <div class="plan-card plan-featured" data-reveal>
+            <span class="plan-popular">Most Chosen</span>
+            <span class="plan-tag">RECOMMENDED</span>
+            <h3 class="plan-name">Full Project</h3>
+            <p class="plan-desc">For businesses that need a complete solution — a full website, a design system, or an AI tool built end-to-end. This is where we do our best work.</p>
+            <ul class="plan-feats">
+              <li>✓ Complete end-to-end delivery</li>
+              <li>✓ Regular progress check-ins</li>
+              <li>✓ Unlimited revisions until you're happy</li>
+              <li>✓ Post-launch support included</li>
+              <li>✓ Full handover with documentation</li>
+            </ul>
+            <a href="#contact" class="plan-btn plan-btn-fill">Let's Build This →</a>
+          </div>
+
+          <div class="plan-card" data-reveal>
+            <span class="plan-tag">ENTERPRISE</span>
+            <h3 class="plan-name">Ongoing Partner</h3>
+            <p class="plan-desc">For businesses that need a reliable team available every month — updates, new features, content, support, and strategy on a rolling basis.</p>
+            <ul class="plan-feats">
+              <li>✓ Dedicated hours each month</li>
+              <li>✓ Priority response always</li>
+              <li>✓ Strategy + execution together</li>
+              <li>✓ Flexible scope each month</li>
+            </ul>
+            <a href="#contact" class="plan-btn">Talk to Us →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════
+         OUR WORK
+    ═══════════════════════════════ -->
+    <section class="work-section" id="our-work" aria-labelledby="workTitle">
+      <div class="container">
+        <div class="section-header centered" data-reveal>
+          <span class="eyebrow">Real Work, Real Results</span>
+          <h2 class="section-title" id="workTitle">
+            Things We've<br/><span class="text-accent">Built &amp; Delivered.</span>
+          </h2>
+          <p class="section-sub">We don't just talk about what we can do — here are actual projects we've completed for real clients.</p>
+        </div>
+
+        <div class="work-grid">
+
+          <article class="work-card" tabindex="0" data-reveal>
+            <div class="work-img-wrap">
+              <img src="work_ministry.png" alt="CEFM Ministries website" class="work-img" loading="lazy" />
+              <div class="work-overlay">
+                <a href="https://akashkolanchiyapan.github.io/cefm-ministries/index.html" target="_blank" rel="noopener noreferrer" class="work-view-btn" aria-label="View CEFM Ministries project">View Live Site ↗</a>
+              </div>
+            </div>
+            <div class="work-info">
+              <div class="work-tags">
+                <span class="work-tag">Website</span>
+                <span class="work-tag">HTML/CSS/JS</span>
+                <span class="work-tag">Responsive</span>
+              </div>
+              <h3 class="work-title">CEFM Ministries — Full Website</h3>
+              <p class="work-desc">A complete website for a global Christian ministry. Features a sermon library, event pages, and a contact system that works on any device.</p>
+              <div class="work-results">
+                <span class="result-chip">+140% More Visitors</span>
+                <span class="result-chip">3x Faster Loading</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card" tabindex="0" data-reveal>
+            <div class="work-img-wrap">
+              <img src="work_portfolio.png" alt="Student developer portfolio" class="work-img" loading="lazy" />
+              <div class="work-overlay">
+                <a href="https://akashkolanchiyapan.github.io/MY-PORTFOLIO/" target="_blank" rel="noopener noreferrer" class="work-view-btn" aria-label="View portfolio project">View Live Site ↗</a>
+              </div>
+            </div>
+            <div class="work-info">
+              <div class="work-tags">
+                <span class="work-tag">Portfolio</span>
+                <span class="work-tag">UI Design</span>
+                <span class="work-tag">Animations</span>
+              </div>
+              <h3 class="work-title">Developer Portfolio — Akash K</h3>
+              <p class="work-desc">A modern personal portfolio for an AI Engineer and Full-Stack Developer. Built to impress recruiters and clients at first glance — fast, animated, and clean.</p>
+              <div class="work-results">
+                <span class="result-chip">Perfect Lighthouse Score</span>
+                <span class="result-chip">Premium Feel</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="work-card work-card-wide" tabindex="0" data-reveal>
+            <div class="work-img-wrap">
+              <img src="work_ai.png" alt="AI Social Content Creator Agent" class="work-img" loading="lazy" />
+              <div class="work-overlay">
+                <a href="https://github.com/AKASHKOLANCHIYAPAN/social-content-creator-agent" target="_blank" rel="noopener noreferrer" class="work-view-btn" aria-label="View AI agent on GitHub">View on GitHub ↗</a>
+              </div>
+            </div>
+            <div class="work-info">
+              <div class="work-tags">
+                <span class="work-tag work-tag-ai">AI Agent</span>
+                <span class="work-tag">Automation</span>
+                <span class="work-tag">Python</span>
+                <span class="work-tag">Open Source</span>
+              </div>
+              <h3 class="work-title">AI Content Creator — Automatic Social Media Agent</h3>
+              <p class="work-desc">An AI system that automatically finds trending topics, writes social media posts, creates matching visuals, and schedules them across platforms. The client went from spending 4 hours a day on content to doing nothing — the AI handles it all.</p>
+              <div class="work-results">
+                <span class="result-chip">Saves 20+ hrs/week</span>
+                <span class="result-chip">Posts on 4 Platforms</span>
+                <span class="result-chip">Fully Automated</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════
+         REVIEWS
+    ═══════════════════════════════ -->
+    <section class="reviews-section" aria-labelledby="reviewsTitle">
+      <div class="container">
+        <div class="section-header centered" data-reveal>
+          <span class="eyebrow">What Clients Say</span>
+          <h2 class="section-title" id="reviewsTitle">
+            Don't Take Our Word for It.<br/><span class="text-accent">Take Theirs.</span>
+          </h2>
+        </div>
+        <div class="reviews-grid">
+
+          <article class="review-card" data-reveal tabindex="0">
+            <div class="review-stars" aria-label="5 stars">★★★★★</div>
+            <blockquote>"They built our ministry website exactly the way we imagined it. Communication was great throughout and they delivered ahead of schedule. Very professional team."</blockquote>
+            <div class="review-author">
+              <div class="review-avatar av1" aria-hidden="true">JK</div>
+              <div>
+                <p class="rev-name">James K.</p>
+                <p class="rev-role">Director, CEFM Ministries</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card" data-reveal tabindex="0">
+            <div class="review-stars" aria-label="5 stars">★★★★★</div>
+            <blockquote>"My portfolio looks absolutely incredible. Every recruiter who visits it mentions how impressive it is. DueAlign understood my style immediately and nailed it."</blockquote>
+            <div class="review-author">
+              <div class="review-avatar av2" aria-hidden="true">RV</div>
+              <div>
+                <p class="rev-name">Rohan V.</p>
+                <p class="rev-role">CS Student & Developer</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card" data-reveal tabindex="0">
+            <div class="review-stars" aria-label="5 stars">★★★★★</div>
+            <blockquote>"The AI automation they built saves our team more than 20 hours every single week. It was confusing at first but they walked us through everything patiently. Absolutely worth it."</blockquote>
+            <div class="review-author">
+              <div class="review-avatar av3" aria-hidden="true">PS</div>
+              <div>
+                <p class="rev-name">Priya S.</p>
+                <p class="rev-role">Marketing Lead</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="review-card" data-reveal tabindex="0">
+            <div class="review-stars" aria-label="5 stars">★★★★★</div>
+            <blockquote>"Fast, responsive, and they actually listen. I've worked with several agencies before and none of them communicated as clearly as DueAlign. Will definitely work with them again."</blockquote>
+            <div class="review-author">
+              <div class="review-avatar av4" aria-hidden="true">AM</div>
+              <div>
+                <p class="rev-name">Arjun M.</p>
+                <p class="rev-role">Startup Founder</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════
+         TEAM
+    ═══════════════════════════════ -->
+    <section class="team-section" id="team" aria-labelledby="teamTitle">
+      <div class="container">
+        <div class="section-header centered" data-reveal>
+          <span class="eyebrow">The Team</span>
+          <h2 class="section-title" id="teamTitle">
+            Two People.<br/><span class="text-accent">One Common Goal.</span>
+          </h2>
+          <p class="section-sub">DueAlign is built on a simple belief: a small, focused team that genuinely cares will always outperform a large agency that doesn't.</p>
+        </div>
+
+        <div class="team-grid">
+
+          <article class="team-card" data-reveal tabindex="0">
+            <div class="team-photo-wrap">
+              <img src="AKASH-IMAGE.jpeg" alt="Akash K, Founder of DueAlign" class="team-photo" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <div class="team-photo-fallback" style="display:none">AK</div>
+            </div>
+            <div class="team-info">
+              <span class="team-badge">Founder</span>
+              <h3 class="team-name">Akash. K</h3>
+              <p class="team-role">AI Engineer · Web Developer · Automation Architect</p>
+              <p class="team-bio">Akash handles all the technical work at DueAlign. He's built AI agents, full-stack web apps, and machine learning systems. If it's complex and technical, he figures it out. He started DueAlign because he wanted to make good tech accessible to everyone — not just big companies.</p>
+              <div class="team-skills">
+                <span>AI Agents</span>
+                <span>Full-Stack Web</span>
+                <span>ML Systems</span>
+                <span>Automation</span>
+              </div>
+              <a href="https://akashkolanchiyapan.github.io/MY-PORTFOLIO/" target="_blank" rel="noopener noreferrer" class="team-link">View Portfolio ↗</a>
+            </div>
+          </article>
+
+          <article class="team-card" data-reveal tabindex="0">
+            <div class="team-photo-wrap">
+              <img src="praveen_cofounder.png" alt="S.Praveen, Co-Founder of DueAlign" class="team-photo" loading="lazy" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+              <div class="team-photo-fallback" style="display:none">SP</div>
+            </div>
+            <div class="team-info">
+              <span class="team-badge team-badge-2">Co-Founder</span>
+              <h3 class="team-name">S. Praveen</h3>
+              <p class="team-role">Creative Director · UI/UX Designer · Content Strategist</p>
+              <p class="team-bio">Praveen is the creative brain behind everything you see at DueAlign. He designs interfaces, writes content, and makes sure every project looks great and communicates clearly. His job is to make sure clients feel confident — and their audience feels understood.</p>
+              <div class="team-skills">
+                <span>UI/UX Design</span>
+                <span>Content Creation</span>
+                <span>Graphic Design</span>
+                <span>Video Editing</span>
+              </div>
+              <a href="#contact" class="team-link">Say Hello ↗</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- JOIN OUR TEAM -->
+    <section class="join-team-section" id="join-team" aria-labelledby="joinTeamTitle">
+      <div class="container">
+        <div class="join-team-inner">
+
+          <div class="join-team-left" data-reveal>
+            <span class="eyebrow">Work With Us</span>
+            <h2 class="section-title" id="joinTeamTitle">
+              Are You a Developer<br/>or Designer?<br/><span class="text-accent">We'd Love to Have You.</span>
+            </h2>
+            <p class="body-text">
+              DueAlign is growing. We're always on the lookout for talented developers, designers, and content creators who want to do meaningful work — remotely, flexibly, and as part of a team that actually cares.
+            </p>
+            <p class="body-text mt-16">
+              If you're good at what you do and want to work on real projects for real clients — send us your resume and a few lines about yourself. No fancy cover letter needed. Just tell us what you're good at.
+            </p>
+
+            <a href="mailto:duealigntechsolution@gmail.com?subject=Job Application — DueAlign&body=Hi DueAlign Team,%0D%0A%0D%0AHere's a bit about me and what I can do:%0D%0A%0D%0A[Your intro here]" class="join-team-email-box" aria-label="Send resume to DueAlign">
+              <div class="join-email-icon">📩</div>
+              <div class="join-email-text">
+                <strong>Send Your Resume Here</strong>
+                <span>duealigntechsolution@gmail.com</span>
+              </div>
+            </a>
+
+            <div class="join-team-note">
+              <strong>Note:</strong> We're a remote-first agency. You can be based anywhere in India. We'll review every application personally and get back to you within 3–5 working days.
+            </div>
+          </div>
+
+          <div class="join-team-right" data-reveal>
+            <p class="section-sub" style="margin-bottom:28px;">Currently looking for people who can help with:</p>
+            <div class="join-team-roles">
+              <div class="role-card">
+                <div class="role-icon">💻</div>
+                <div class="role-title">Web Developer</div>
+                <div class="role-desc">HTML, CSS, JavaScript, React, or any backend — if you build websites well, we want you.</div>
+              </div>
+              <div class="role-card">
+                <div class="role-icon">📱</div>
+                <div class="role-title">App Developer</div>
+                <div class="role-desc">React Native, Flutter, or native Android/iOS. Experience with real apps preferred.</div>
+              </div>
+              <div class="role-card">
+                <div class="role-icon">🤖</div>
+                <div class="role-title">AI / ML Engineer</div>
+                <div class="role-desc">Python, LLMs, automation pipelines, AI agents. If you've built something cool, show us.</div>
+              </div>
+              <div class="role-card">
+                <div class="role-icon">🎨</div>
+                <div class="role-title">UI/UX Designer</div>
+                <div class="role-desc">Figma, design systems, user research. Show us your portfolio and we'll talk.</div>
+              </div>
+              <div class="role-card">
+                <div class="role-icon">✍️</div>
+                <div class="role-title">Content Writer</div>
+                <div class="role-desc">Website copy, social media, blogs. Clear, human writing that actually connects.</div>
+              </div>
+              <div class="role-card">
+                <div class="role-icon">🖌️</div>
+                <div class="role-title">Graphic Designer</div>
+                <div class="role-desc">Logos, branding, social creatives. Strong visual sense and attention to detail.</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact" aria-labelledby="contactTitle">
+      <div class="container">
+        <div class="contact-inner">
+
+          <div class="contact-left" data-reveal>
+            <span class="eyebrow">Let's Work Together</span>
+            <h2 class="section-title" id="contactTitle">
+              Ready to Get Started?<br/><span class="text-accent">We'd Love to Hear From You.</span>
+            </h2>
+            <p class="body-text">
+              Tell us what you're working on and we'll get back to you within 2 hours. No sales pitch, no pressure — just a real conversation about what you need and how we can help.
+            </p>
+
+            <div class="contact-reasons">
+              <div class="contact-reason">
+                <img src="svc_web.png" alt="" class="reason-img" aria-hidden="true" />
+                <span>We reply within 2 hours, every day</span>
+              </div>
+              <div class="contact-reason">
+                <img src="svc_ai.png" alt="" class="reason-img" aria-hidden="true" />
+                <span>First call is completely free</span>
+              </div>
+              <div class="contact-reason">
+                <img src="svc_remote.png" alt="" class="reason-img" aria-hidden="true" />
+                <span>No commitment until you're ready</span>
+              </div>
+            </div>
+
+            <div class="contact-direct-links">
+              <a href="mailto:duealigntechsolution@gmail.com" class="direct-link" aria-label="Email DueAlign">
+                <img src="svc_content.png" alt="" class="direct-icon" aria-hidden="true" />
+                <div>
+                  <span class="direct-link-label">Email Us Directly</span>
+                  <span class="direct-link-val">duealigntechsolution@gmail.com</span>
+                </div>
+              </a>
+              <a href="https://www.instagram.com/duealign?igsh=MTRmM3o5NXlvYTZ1OA==" target="_blank" rel="noopener noreferrer" class="direct-link" aria-label="DueAlign on Instagram">
+                <img src="svc_graphic.png" alt="" class="direct-icon" aria-hidden="true" />
+                <div>
+                  <span class="direct-link-label">Follow on Instagram</span>
+                  <span class="direct-link-val">@duealign</span>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Form sends directly to email via FormSubmit -->
+          <div class="contact-right" data-reveal>
+            <form
+              class="contact-form"
+              id="contactForm"
+              action="https://formsubmit.co/duealigntechsolution@gmail.com"
+              method="POST"
+              novalidate
+              aria-label="Contact form"
+            >
+              <!-- FormSubmit config -->
+              <input type="hidden" name="_subject" value="New Project Inquiry — DueAlign Website" />
+              <input type="hidden" name="_captcha" value="false" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_next" value="https://duealign.com/#contact" />
+              <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="fname" class="form-lbl">Your Name</label>
+                  <input type="text" id="fname" name="Name" class="form-input" placeholder="e.g. Alex Johnson" required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label for="femail" class="form-lbl">Email Address</label>
+                  <input type="email" id="femail" name="Email" class="form-input" placeholder="you@yourcompany.com" required autocomplete="email" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="fservice" class="form-lbl">What do you need?</label>
+                <select id="fservice" name="Service Needed" class="form-input form-select" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="Website Development">Website Development</option>
+                  <option value="Mobile App Development">Mobile App Development</option>
+                  <option value="AI Automation">AI / Automation</option>
+                  <option value="UI/UX Design">UI/UX Design</option>
+                  <option value="Content Creation">Content Creation</option>
+                  <option value="Graphic Design / Branding">Graphic Design / Branding</option>
+                  <option value="Full Package">Full Package (Multiple Services)</option>
+                  <option value="Not Sure">Not Sure — Need Advice</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="fbrief" class="form-lbl">Tell us about your project</label>
+                <textarea id="fbrief" name="Project Brief" class="form-input form-textarea" rows="4" placeholder="What are you building? What's the goal? Any deadline? Share as little or as much as you'd like." required></textarea>
+              </div>
+
+              <div class="form-group form-budget">
+                <label class="form-lbl">Rough budget range (optional)</label>
+                <div class="budget-options">
+                  <label class="budget-opt"><input type="radio" name="Budget" value="Under ₹2k" /> Under ₹2k</label>
+                  <label class="budget-opt"><input type="radio" name="Budget" value="₹2k–₹5k" /> ₹2k–₹5k</label>
+                  <label class="budget-opt"><input type="radio" name="Budget" value="₹5k–₹15k" /> ₹5k–₹15k</label>
+                  <label class="budget-opt"><input type="radio" name="Budget" value="₹15k+" /> ₹15k+</label>
+                </div>
+              </div>
+
+              <button type="submit" class="btn-fill form-submit" id="submitBtn">
+                Send Message — We'll Reply in 2 Hours →
+              </button>
+
+              <p class="form-note">Your message goes directly to our inbox. We read every single one.</p>
+            </form>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════
+       FOOTER
+  ═══════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-top">
+
+        <div class="footer-brand">
+          <img src="logo.jpeg" alt="DueAlign" class="footer-logo" />
+          <p class="footer-tagline">Two Minds, One Vision.<br/>Real work. Real results.</p>
+          <a href="mailto:duealigntechsolution@gmail.com" class="footer-email">duealigntechsolution@gmail.com</a>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Services</h4>
+          <ul>
+            <li><a href="#services">Website Development</a></li>
+            <li><a href="#services">AI & Automation</a></li>
+            <li><a href="#services">UI/UX Design</a></li>
+            <li><a href="#services">Content Creation</a></li>
+            <li><a href="#services">Graphic Design</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Company</h4>
+          <ul>
+            <li><a href="#our-work">Our Work</a></li>
+            <li><a href="#team">Our Team</a></li>
+            <li><a href="#join-team">Careers / Join Us</a></li>
+            <li><a href="#plans">Pricing</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4 class="footer-col-title">Connect With Us</h4>
+          <div class="footer-socials">
+            <a href="https://github.com/AKASHKOLANCHIYAPAN" target="_blank" rel="noopener noreferrer" class="soc-btn" aria-label="GitHub">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+              GitHub
+            </a>
+            <a href="https://www.instagram.com/duealign?igsh=MTRmM3o5NXlvYTZ1OA==" target="_blank" rel="noopener noreferrer" class="soc-btn" aria-label="Instagram">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+              Instagram
+            </a>
+            <a href="mailto:duealigntechsolution@gmail.com" class="soc-btn" aria-label="Email">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              Email
+            </a>
+          </div>
+          <div class="footer-cta-links">
+            <a href="mailto:duealigntechsolution@gmail.com" class="footer-big-btn">Send Us an Email →</a>
+            <a href="https://www.instagram.com/duealign?igsh=MTRmM3o5NXlvYTZ1OA==" target="_blank" rel="noopener noreferrer" class="footer-big-btn">Follow on Instagram →</a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 DueAlign Studio. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Use</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
