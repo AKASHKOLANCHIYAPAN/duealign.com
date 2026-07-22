@@ -286,6 +286,28 @@
     });
   }
 
+  /* ── Form Handler: FormSubmit + mailto fallback ── */
+  const contactForm = document.getElementById('contactForm');
+  if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+      const name = document.getElementById('fname')?.value || '';
+      const email = document.getElementById('femail')?.value || '';
+      const service = document.getElementById('fservice')?.value || '';
+      const brief = document.getElementById('fbrief')?.value || '';
+      const budgetEl = contactForm.querySelector('input[name="Budget"]:checked');
+      const budget = budgetEl ? budgetEl.value : 'Not specified';
+
+      const mailtoUrl = `mailto:duealigntechsolution@gmail.com?subject=${encodeURIComponent('Project Inquiry from ' + name + ' — DueAlign')}&body=${encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\nService: ${service}\nBudget: ${budget}\n\nProject Brief:\n${brief}`
+      )}`;
+
+      // Trigger mailto client as extra assurance alongside form action
+      setTimeout(() => {
+        window.location.href = mailtoUrl;
+      }, 300);
+    });
+  }
+
   /* ── Dev console signature ── */
   console.log('%c DueAlign Studio %c Two Minds, One Vision ', 'background:#2563EB;color:#fff;font-weight:bold;padding:4px 8px;border-radius:4px 0 0 4px', 'background:#0A0A14;color:#fff;padding:4px 8px;border-radius:0 4px 4px 0');
 
