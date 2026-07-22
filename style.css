@@ -1182,6 +1182,7 @@ button { border: none; background: none; font: inherit; cursor: pointer; }
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center top;
   transition: transform var(--t-slow);
 }
 .team-card:hover .team-photo { transform: scale(1.03); }
@@ -1987,9 +1988,26 @@ button { border: none; background: none; font: inherit; cursor: pointer; }
   .reviews-grid { grid-template-columns: 1fr !important; gap: 14px !important; width: 100% !important; }
   .review-card { padding: 22px 16px !important; width: 100% !important; }
   .team-grid { grid-template-columns: 1fr !important; gap: 20px !important; width: 100% !important; }
-  .team-card { grid-template-columns: 1fr !important; width: 100% !important; }
-  .team-info { padding: 22px 16px !important; }
-  .team-photo-wrap { height: 240px !important; width: 100% !important; }
+  .team-card {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    border-radius: var(--radius) !important;
+    overflow: hidden !important;
+  }
+  .team-photo-wrap {
+    height: 360px !important;
+    width: 100% !important;
+    position: relative !important;
+    background: var(--accent-lt) !important;
+  }
+  .team-photo {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center 10% !important;
+  }
+  .team-info { padding: 22px 18px !important; }
 
   /* Join Team Mobile */
   .join-team-inner { grid-template-columns: 1fr !important; gap: 28px !important; width: 100% !important; }
